@@ -466,8 +466,8 @@ void AP_MotorsMatrix::setup_motors(motor_frame_class frame_class, motor_frame_ty
 
     bool success = true;
 
-    add_motor_raw(AP_MOTORS_MOT_1, -1, -1, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 1);
-    add_motor_raw(AP_MOTORS_MOT_2, 1, -1, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 2);
+    add_motor_raw(AP_MOTORS_MOT_1, 0, 0, AP_MOTORS_MATRIX_YAW_FACTOR_CW, 1);
+    add_motor_raw(AP_MOTORS_MOT_2, 0, 0, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 2);
 
     // normalise factors to magnitude 0.5
     normalise_rpy_factors();
